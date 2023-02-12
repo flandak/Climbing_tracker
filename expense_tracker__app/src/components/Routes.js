@@ -1,8 +1,9 @@
 import RouteItem from "./RouteItem";
 import "./Routes.css";
+import Card from "./Card";
 function Routes(props) {
   return (
-    <div className="expenses">
+    <Card className="expenses">
       <RouteItem
         title={props.items[0].title}
         date={props.items[0].date}
@@ -21,7 +22,7 @@ function Routes(props) {
         grade={props.items[1].grade}
         style={props.items[1].style}
       />
-    </div>
+    </Card>
   );
 }
 export default Routes;
