@@ -27,7 +27,7 @@
     color: white;
 }
 
-.route-item__price {
+.route-item__grade {
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -49,7 +49,7 @@
         font-size: 1.25rem;
     }
 
-    .route-item__price {
+    .route-item__grade {
         font-size: 1.25rem;
         padding: 0.5rem 1.5rem;
     }
