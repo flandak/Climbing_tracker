@@ -1,0 +1,38 @@
+.new-routes {
+    background-color: #2d4059;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.new-routes button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #2d4059;
+    background-color: #528f92;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+
+.new-routes button:hover,
+.new-routes button:active {
+    background-color: #222831;
+    border-color: #222831;
+}
+
+.new-routes button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.new-routes button.alternative:hover,
+.new-routes button.alternative:active {
+    background-color: #ddb3f8;
+}

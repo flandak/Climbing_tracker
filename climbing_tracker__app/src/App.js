@@ -1,5 +1,6 @@
 import Routes from "./components/Routes";
 import React from "react";
+import NewRoutes from "./components/NewRoutes/NewRoutes";
 function App() {
   const routes = [
     {
@@ -23,6 +24,7 @@ function App() {
   ];
   return (
     <div>
+      <NewRoutes/>
       <Routes items={routes}/>;
     </div>
   );
