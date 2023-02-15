@@ -22,9 +22,13 @@ function App() {
       style: "powerful",
     },
   ];
+  const addRouteHandler = route =>{
+    console.log('in app.js');
+    console.log(route);
+  }
   return (
     <div>
-      <NewRoutes/>
+      <NewRoutes onAddRoute={addRouteHandler}/>
       <Routes items={routes}/>;
     </div>
   );

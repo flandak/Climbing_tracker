@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./RoutesForm.css";
 
-const RoutesForm = () => {
+const RoutesForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredGrade, setEnteredGrade] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -16,12 +16,12 @@ const RoutesForm = () => {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    const expenseData = {
+    const routeData = {
       title: enteredTitle,
       amount: enteredGrade,
       date: new Date(enteredDate),
     };
-    console.log(expenseData);
+    props.onSaveNewRoute(routeData);
     setEnteredGrade("");
     setEnteredDate("");
     setEnteredTitle("");
