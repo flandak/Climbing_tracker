@@ -14,20 +14,48 @@ const RoutesForm = () => {
   const dateChangeHandler = (e) => {
     setEnteredDate(e.target.value);
   };
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const expenseData = {
+      title: enteredTitle,
+      amount: enteredGrade,
+      date: new Date(enteredDate),
+    };
+    console.log(expenseData);
+    setEnteredGrade("");
+    setEnteredDate("");
+    setEnteredTitle("");
+  };
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div className="new-routes__controls">
         <div className="new-routes__control">
           <label className="labels">Title</label>
-          <input type="text" onChange={titleChangeHandler} />
+          <input
+            type="text"
+            value={enteredTitle}
+            onChange={titleChangeHandler}
+          />
         </div>
         <div className="new-routes__control">
           <label className="labels">Grade</label>
-          <input type="number" min="5" step="1" onChange={gradeChangeHandler} />
+          <input
+            type="number"
+            min="5"
+            step="1"
+            value={enteredGrade}
+            onChange={gradeChangeHandler}
+          />
         </div>
         <div className="new-routes__control">
           <label className="labels">Date</label>
-          <input type="date" min="2015-01-01" max="2050-12-31" onChange={dateChangeHandler}/>
+          <input
+            type="date"
+            min="2015-01-01"
+            max="2050-12-31"
+            value={enteredDate}
+            onChange={dateChangeHandler}
+          />
         </div>
         <div className="new-routes__actions">
           <button>Add route</button>
