@@ -18,7 +18,7 @@ const RoutesForm = (props) => {
     e.preventDefault();
     const routeData = {
       title: enteredTitle,
-      amount: enteredGrade,
+      grade: enteredGrade,
       date: new Date(enteredDate),
     };
     props.onSaveNewRoute(routeData);
@@ -40,9 +40,7 @@ const RoutesForm = (props) => {
         <div className="new-routes__control">
           <label className="labels">Grade</label>
           <input
-            type="number"
-            min="5"
-            step="1"
+            type="text"
             value={enteredGrade}
             onChange={gradeChangeHandler}
           />
@@ -58,7 +56,7 @@ const RoutesForm = (props) => {
           />
         </div>
         <div className="new-routes__actions">
-          <button>Add route</button>
+          <button type="submit">Add route</button>
         </div>
       </div>
     </form>
