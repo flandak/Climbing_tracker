@@ -11,8 +11,8 @@ const sampleRoutes = [
   {
     id: "02",
     date: new Date(2023, 2, 11),
-    title: "perfecto mundo",
-    grade: "9b+",
+    title: "plešounova spára",
+    grade: "5",
   },
   {
     id: "03",

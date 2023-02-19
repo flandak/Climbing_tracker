@@ -13,12 +13,14 @@ function Routes(props) {
   for (const route of props.items) {
     if (route.date.getFullYear().toString() === filteredYear) {
       routeItems.push(
-        <RouteItem
-          key={route.id}
-          title={route.title}
-          date={route.date}
-          grade={route.grade}
-        />
+        <li>
+          <RouteItem
+            key={route.id}
+            title={route.title}
+            date={route.date}
+            grade={route.grade}
+          />
+        </li>
       );
     }
   }
@@ -30,11 +32,13 @@ function Routes(props) {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {routeItems.length > 0 ? (
-          routeItems
-        ) : (
-          <h4>- - - No routes found for the selected year - - -</h4>
-        )}
+        <ul className="routes-list">
+          {routeItems.length > 0 ? (
+            routeItems
+          ) : (
+            <h4 className="routes-list__noRoutesMsg">- - - No routes found for the selected year - - -</h4>
+          )}
+        </ul >
       </Card>
     </div>
   );

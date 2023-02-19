@@ -6,7 +6,11 @@
     width: 50rem;
     max-width: 95%;
 }
-h4{
+.routes-list{
+    padding: 0;
+    list-style: none;
+}
+.routes-list__noRoutesMsg{
     color: #ff5722;
    text-align: center;
    text-transform: uppercase;  

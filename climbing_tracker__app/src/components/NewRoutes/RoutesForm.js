@@ -56,6 +56,7 @@ const RoutesForm = (props) => {
           />
         </div>
         <div className="new-routes__actions">
+          <button type="button" onClick={props.onCancel}>Cancel</button>
           <button type="submit">Add route</button>
         </div>
       </div>
