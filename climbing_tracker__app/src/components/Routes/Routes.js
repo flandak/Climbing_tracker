@@ -8,6 +8,21 @@ function Routes(props) {
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
+  const routeItems = [];
+
+  for (const route of props.items) {
+    if (route.date.getFullYear().toString() === filteredYear) {
+      routeItems.push(
+        <RouteItem
+          key={route.id}
+          title={route.title}
+          date={route.date}
+          grade={route.grade}
+        />
+      );
+    }
+  }
+
   return (
     <div>
       <Card className="routes">
@@ -15,15 +30,15 @@ function Routes(props) {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {props.items.map((route) => (
-          <RouteItem
-            title={route.title}
-            date={route.date}
-            grade={route.grade}
-          />
-        ))}        
+        {routeItems.length > 0 ? (
+          routeItems
+        ) : (
+          <h4>- - - No routes found for the selected year - - -</h4>
+        )}
       </Card>
     </div>
   );
 }
 export default Routes;
+
+
