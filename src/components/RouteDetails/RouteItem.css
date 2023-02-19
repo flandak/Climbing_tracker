@@ -34,6 +34,33 @@
     padding: 0.5rem;
     border-radius: 12px;
 }
+.route-item__btn{
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #2d4059;
+    background-color: #528f92;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+
+.route-item__btn:hover,
+.route-item__btn:active {
+    background-color: #222831;
+    border-color: #222831;
+}
+
+.route-item__btn button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.route-item__btn button.alternative:hover,
+.route-item__btn button.alternative:active {
+    background-color: #ddb3f8;
+}
 
 @media (min-width: 580px) {
     .route-item__description {
