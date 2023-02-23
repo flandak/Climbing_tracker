@@ -6,11 +6,12 @@ import RoutesFilter from "../RoutesFilter/RoutesFilter";
 
 function Routes(props) {
   const [filteredYear, setFilteredYear] = useState("2023");
+  // Function that handles filter changes
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
+  // Generates an array of route components
   const routeItems = [];
-
   for (const route of props.items) {
     if (route.date.getFullYear().toString() === filteredYear) {
       routeItems.push(
@@ -29,11 +30,12 @@ function Routes(props) {
   return (
     <div>
       <Card className="routes">
+        {/* this component allows user to filter routes by year */}
         <RoutesFilter
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-
+        {/* Check if there are items in the routeItems array */}
         <ul className="routes-list">
           {routeItems.length > 0 ? (
             routeItems

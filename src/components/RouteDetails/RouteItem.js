@@ -7,15 +7,11 @@ import Card from "../UI/Card"; //Import UI card
  */
 function RouteItem(props) {
   return (
-    <Card className="route-item">
-      {/* Set route date using RouteDate component*/}
+    <Card className="route-item">     
       <RouteDate date={props.date} />
-
-      {/*Set route details */}
       <div className="route-item__description">
-        <h2>{props.title}</h2> {/*Set route name*/}
-        <div className="route-item__grade">{props.grade}</div>{" "}
-        {/*Set route grade*/}
+        <h2>{props.title}</h2> 
+        <div className="route-item__grade">{props.grade}</div>       
       </div>
     </Card>
   );
