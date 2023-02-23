@@ -23,8 +23,15 @@
 
 .new-routes__actions {
     text-align: right;
+    display: flex;
+        align-items: center;
 }
 
 .labels {
     color: white;
+}
+
+.error-text {
+    color: #ff5722;
+    margin-top: 5px;
 }

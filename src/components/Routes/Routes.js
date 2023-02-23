@@ -3,6 +3,7 @@ import "./Routes.css";
 import Card from "../UI/Card";
 import React, { useState } from "react";
 import RoutesFilter from "../RoutesFilter/RoutesFilter";
+
 function Routes(props) {
   const [filteredYear, setFilteredYear] = useState("2023");
   const filterChangeHandler = (selectedYear) => {
@@ -32,17 +33,18 @@ function Routes(props) {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
+
         <ul className="routes-list">
           {routeItems.length > 0 ? (
             routeItems
           ) : (
-            <h4 className="routes-list__noRoutesMsg">- - - No routes found for the selected year - - -</h4>
+            <h4 className="routes-list__noRoutesMsg">
+              - - - No routes found for the selected year - - -
+            </h4>
           )}
-        </ul >
+        </ul>
       </Card>
     </div>
   );
 }
 export default Routes;
-
-
