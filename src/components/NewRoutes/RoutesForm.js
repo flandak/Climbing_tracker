@@ -62,9 +62,6 @@ const RoutesForm = (props) => {
   return (
     <form onSubmit={submitHandler}>
       <div className="new-routes__controls">
-        {/* adds the class invalid to the div element's class list when titleIsValid
-        is false, which can be used for styling the input field to indicate to
-        the user that the input is invalid */}
         <div className={`new-routes__control ${titleIsValid ? "" : "invalid"}`}>
           <label className="labels">Title</label>
           <input

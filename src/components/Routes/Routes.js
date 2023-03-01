@@ -11,11 +11,11 @@ function Routes(props) {
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
-
   const filteredRoutes = props.items.filter((route) => {
     return route.date.getFullYear().toString() === filteredYear;
   });
   console.log(filteredRoutes);
+
   return (
     <div>
       <Card className="routes">

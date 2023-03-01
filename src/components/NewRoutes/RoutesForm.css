@@ -24,7 +24,9 @@
 .new-routes__actions {
     text-align: right;
     display: flex;
-        align-items: center;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 
 .labels {
@@ -32,6 +34,7 @@
 }
 
 .error-text {
-    color: #ff5722;
+    color: #d3799b;
+    text-transform: uppercase;
     margin-top: 5px;
 }

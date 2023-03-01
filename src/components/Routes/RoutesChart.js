@@ -16,7 +16,7 @@ const RoutesChart = (props) => {
     { label: "Nov", value: 0 },
     { label: "Dec", value: 0 },
   ];
-const monthSums = Array(12).fill(0); // initialize array with 12 zeros for each month
+  const monthSums = Array(12).fill(0); // initialize array with 12 zeros for each month
 
   for (const route of props.routes) {
     const routeMonth = route.date.getMonth(); // starting at 0 => January => 0

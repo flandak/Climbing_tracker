@@ -12,12 +12,13 @@
 .new-routes button {
     font: inherit;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 0.7rem 2rem;
     border: 1px solid #3f3f3f;
     background-color: #4a8aa5;
     color: white;
     border-radius: 12px;
     margin-right: 1rem;
+    width: 9rem;
 }
 
 .new-routes button:hover,
