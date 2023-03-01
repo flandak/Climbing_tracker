@@ -7,11 +7,11 @@ import Card from "../UI/Card"; //Import UI card
  */
 function RouteItem(props) {
   return (
-    <Card className="route-item">     
+    <Card className="route-item">
       <RouteDate date={props.date} />
       <div className="route-item__description">
-        <h2>{props.title}</h2> 
-        <div className="route-item__grade">{props.grade}</div>       
+        <h2>{props.title}</h2>
+        <div className="route-item__grade">{props.grade}</div>
       </div>
     </Card>
   );

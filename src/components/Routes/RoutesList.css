@@ -1,0 +1,9 @@
+.routes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.routes-list__fallback {
+    color: white;
+    text-align: center;
+}

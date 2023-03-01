@@ -7,9 +7,10 @@ const NewRoutes = (props) => {
   const saveNewRouteHandler = (enteredRouteData) => {
     const routeData = {
       ...enteredRouteData,
-       id: Math.random().toString(),
+      id: Math.random().toString(),
     };
     props.onAddRoute(routeData);
+    setIsEditing(false);
   };
   //function that sets the editing state to true which displays the form
   const startEditingHandler = () => {

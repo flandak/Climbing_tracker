@@ -1,5 +1,5 @@
 .new-routes {
-    background-color: #2d4059;
+    background-color: #1D6D8E;
     padding: 1rem;
     margin: 2rem auto;
     width: 50rem;
@@ -13,8 +13,8 @@
     font: inherit;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 1px solid #2d4059;
-    background-color: #528f92;
+    border: 1px solid #3f3f3f;
+    background-color: #4a8aa5;
     color: white;
     border-radius: 12px;
     margin-right: 1rem;
@@ -22,7 +22,7 @@
 
 .new-routes button:hover,
 .new-routes button:active {
-    background-color: #222831;
+    background-color: #77a7bb;
     border-color: #222831;
 }
 
